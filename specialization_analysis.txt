@@ -1,0 +1,125 @@
+
+Model Specializations Analysis (Based on Normalized Scores):
+=========================================================
+
+Model: google/gemma-2-27b-it
+Specializes in: RandomStringGenerationScore
+Specialization magnitude: 0.393
+Normalized score in this category: 1.000
+Original score in this category: 0.880
+Ranks #1 in its specialty category
+
+Model: mistralai/mistral-nemo
+Specializes in: RandomStringGenerationScore
+Specialization magnitude: 0.381
+Normalized score in this category: 0.804
+Original score in this category: 0.803
+Ranks #3 in its specialty category
+
+Model: meta-llama/llama-3.1-70b-instruct
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.323
+Normalized score in this category: 0.950
+Original score in this category: 0.278
+Ranks #2 in its specialty category
+
+Model: microsoft/wizardlm-2-8x22b
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.267
+Normalized score in this category: 0.600
+Original score in this category: 0.181
+Ranks #9 in its specialty category
+
+Model: qwen/qwen-2.5-72b-instruct
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.264
+Normalized score in this category: 0.900
+Original score in this category: 0.264
+Ranks #3 in its specialty category
+
+Model: nousresearch/hermes-3-llama-3.1-405b
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.246
+Normalized score in this category: 0.800
+Original score in this category: 0.236
+Ranks #4 in its specialty category
+
+Model: anthropic/claude-3-haiku
+Specializes in: RandomStringGenerationScore
+Specialization magnitude: 0.229
+Normalized score in this category: 0.660
+Original score in this category: 0.746
+Ranks #6 in its specialty category
+
+Model: x-ai/grok-beta
+Specializes in: RandomStringIdentificationScore
+Specialization magnitude: 0.217
+Normalized score in this category: 0.875
+Original score in this category: 0.115
+Ranks #2 in its specialty category
+
+Model: anthropic/claude-3.5-sonnet
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.188
+Normalized score in this category: 1.000
+Original score in this category: 0.292
+Ranks #1 in its specialty category
+
+Model: mistralai/mistral-tiny
+Specializes in: RandomStringGenerationScore
+Specialization magnitude: 0.179
+Normalized score in this category: 0.238
+Original score in this category: 0.579
+Ranks #12 in its specialty category
+
+Model: cohere/command-r
+Specializes in: RandomStringIdentificationScore
+Specialization magnitude: 0.142
+Normalized score in this category: 0.375
+Original score in this category: 0.069
+Ranks #9 in its specialty category
+
+Model: meta-llama/llama-3-70b-instruct
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.123
+Normalized score in this category: 0.650
+Original score in this category: 0.194
+Ranks #8 in its specialty category
+
+Model: google/gemini-flash-1.5
+Specializes in: MultiStepScore
+Specialization magnitude: 0.109
+Normalized score in this category: 1.000
+Original score in this category: 0.306
+Ranks #1 in its specialty category
+
+Model: openai/gpt-3.5-turbo
+Specializes in: MultiStepScore
+Specialization magnitude: 0.108
+Normalized score in this category: 0.474
+Original score in this category: 0.167
+Ranks #11 in its specialty category
+
+Model: meta-llama/llama-3.1-8b-instruct
+Specializes in: ComplexCalculationsScore
+Specialization magnitude: 0.108
+Normalized score in this category: 0.450
+Original score in this category: 0.139
+Ranks #11 in its specialty category
+
+Model: openai/gpt-4o-mini
+Specializes in: RandomStringGenerationScore
+Specialization magnitude: 0.064
+Normalized score in this category: 0.865
+Original score in this category: 0.827
+Ranks #2 in its specialty category
+
+Summary Statistics:
+==================
+
+Category Distribution (number of models specializing in each):
+ComplexCalculationsScore           7
+RandomStringGenerationScore        5
+MultiStepScore                     2
+RandomStringIdentificationScore    2
+Name: count, dtype: int64

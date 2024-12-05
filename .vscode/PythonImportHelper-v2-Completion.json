@@ -1,0 +1,397 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.stats",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "secrets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "secrets",
+        "description": "secrets",
+        "detail": "secrets",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "df = pd.read_csv('LLMResults.csv')\n# Calculate average performance\ndf['AverageScore'] = df.iloc[:, 1:].mean(axis=1)\n# Create individual bar plots for each metric\nmetrics = ['ComplexCalculationsScore', 'MultiStepScore', 'RandomStringIdentificationScore', 'RandomStringGenerationScore']\nfor metric in metrics:\n    # Sort DataFrame by current metric in descending order\n    plot_df = df.sort_values(by=metric, ascending=False)\n    plt.figure(figsize=(10, 6))\n    plt.bar(range(len(plot_df)), plot_df[metric])",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "df['AverageScore']",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "df['AverageScore'] = df.iloc[:, 1:].mean(axis=1)\n# Create individual bar plots for each metric\nmetrics = ['ComplexCalculationsScore', 'MultiStepScore', 'RandomStringIdentificationScore', 'RandomStringGenerationScore']\nfor metric in metrics:\n    # Sort DataFrame by current metric in descending order\n    plot_df = df.sort_values(by=metric, ascending=False)\n    plt.figure(figsize=(10, 6))\n    plt.bar(range(len(plot_df)), plot_df[metric])\n    plt.title(f'Performance Comparison - {metric}')\n    plt.xlabel('Models')",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "metrics",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "metrics = ['ComplexCalculationsScore', 'MultiStepScore', 'RandomStringIdentificationScore', 'RandomStringGenerationScore']\nfor metric in metrics:\n    # Sort DataFrame by current metric in descending order\n    plot_df = df.sort_values(by=metric, ascending=False)\n    plt.figure(figsize=(10, 6))\n    plt.bar(range(len(plot_df)), plot_df[metric])\n    plt.title(f'Performance Comparison - {metric}')\n    plt.xlabel('Models')\n    plt.ylabel('Score')\n    plt.xticks(range(len(plot_df)), plot_df['Model'], rotation=45, ha='right')",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "plot_df",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "plot_df = df.sort_values(by='AverageScore', ascending=False)\nplt.figure(figsize=(10, 6))\nplt.bar(range(len(plot_df)), plot_df['AverageScore'])\nplt.title('Average Performance Across All Metrics')\nplt.xlabel('Models')\nplt.ylabel('Average Score')\nplt.xticks(range(len(plot_df)), plot_df['Model'], rotation=45, ha='right')\nplt.tight_layout()\nplt.savefig('average_performance.png')\nplt.close()",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "heatmap_data",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "heatmap_data = df.set_index('Model').iloc[:, :-1]  # Exclude AverageScore\nsns.heatmap(heatmap_data, annot=True, cmap='YlOrRd', fmt='.2f')\nplt.title('Performance Heatmap')\nplt.tight_layout()\nplt.savefig('performance_heatmap.png')\nplt.close()\n# Create normalized line plot\nnormalized_df = df.copy()\nfor metric in metrics:\n    min_val = normalized_df[metric].min()",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "normalized_df",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "normalized_df = df.copy()\nfor metric in metrics:\n    min_val = normalized_df[metric].min()\n    max_val = normalized_df[metric].max()\n    normalized_df[metric] = (normalized_df[metric] - min_val) / (max_val - min_val)\nmelted_df = normalized_df.melt(id_vars=['Model'], \n                              value_vars=metrics,\n                              var_name='Metric', \n                              value_name='Normalized Score')\nplt.figure(figsize=(12, 6))",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "melted_df",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "melted_df = normalized_df.melt(id_vars=['Model'], \n                              value_vars=metrics,\n                              var_name='Metric', \n                              value_name='Normalized Score')\nplt.figure(figsize=(12, 6))\nax = sns.pointplot(data=melted_df, x='Metric', y='Normalized Score', hue='Model')\nplt.title('Normalized Performance by Category')\nplt.xticks(range(len(metrics)), metrics, rotation=45, ha='right')\nplt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')\nplt.tight_layout()",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "DataAnalysis",
+        "description": "DataAnalysis",
+        "peekOfCode": "ax = sns.pointplot(data=melted_df, x='Metric', y='Normalized Score', hue='Model')\nplt.title('Normalized Performance by Category')\nplt.xticks(range(len(metrics)), metrics, rotation=45, ha='right')\nplt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')\nplt.tight_layout()\nplt.savefig('normalized_performance.png', bbox_inches='tight')\nplt.close()\n# Print average scores\nprint(\"\\nAverage Scores:\")\nfor _, row in df.iterrows():",
+        "detail": "DataAnalysis",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_specialization",
+        "kind": 2,
+        "importPath": "DataAnalysisSpecialization",
+        "description": "DataAnalysisSpecialization",
+        "peekOfCode": "def analyze_specialization(file_path):\n    # Redirect stdout to both file and console\n    class Logger(object):\n        def __init__(self, filename=\"Default.log\"):\n            self.terminal = sys.stdout\n            self.log = open(filename, \"w\")\n        def write(self, message):\n            self.terminal.write(message)\n            self.log.write(message)\n        def flush(self):",
+        "detail": "DataAnalysisSpecialization",
+        "documentation": {}
+    },
+    {
+        "label": "getResponse",
+        "kind": 2,
+        "importPath": "EvaluateLLM",
+        "description": "EvaluateLLM",
+        "peekOfCode": "def getResponse(api_key,\n                prompt: str, \n                model: str = \"openai/gpt-3.5-turbo\",\n                temperature: float = 1.0,\n                top_p: float = 1.0,\n                top_k: int = 0,\n                frequency_penalty: float = 0.0,\n                presence_penalty: float = 0.0,\n                repetition_penalty: float = 1.0,\n                min_p: float = 0.0,",
+        "detail": "EvaluateLLM",
+        "documentation": {}
+    },
+    {
+        "label": "getModels",
+        "kind": 2,
+        "importPath": "EvaluateLLM",
+        "description": "EvaluateLLM",
+        "peekOfCode": "def getModels():\n    response = requests.get(\n        url=\"https://openrouter.ai/api/v1/models\"\n    )\n    return response.json()\ndef getFreeModels():\n    response = getModels()\n    free_models = []\n    for model in response['data']:\n        prices = copy.copy(model['pricing'])",
+        "detail": "EvaluateLLM",
+        "documentation": {}
+    },
+    {
+        "label": "getFreeModels",
+        "kind": 2,
+        "importPath": "EvaluateLLM",
+        "description": "EvaluateLLM",
+        "peekOfCode": "def getFreeModels():\n    response = getModels()\n    free_models = []\n    for model in response['data']:\n        prices = copy.copy(model['pricing'])\n        for x in prices:\n            prices[x] = float(prices[x])\n        if sum(prices.values()) == 0:\n            free_models.append(model)\n    return free_models",
+        "detail": "EvaluateLLM",
+        "documentation": {}
+    },
+    {
+        "label": "evaluateModelOnCsv",
+        "kind": 2,
+        "importPath": "EvaluateLLM",
+        "description": "EvaluateLLM",
+        "peekOfCode": "def evaluateModelOnCsv(model: str, api_key: str, csv_path: str, num_attempts: int = 1):\n    # opening with pandas\n    import pandas as pd\n    df = pd.read_csv(csv_path, dtype=str)\n    # remove first row\n    df = df.iloc[1:]\n    # get the questions\n    questions = df['Question'].tolist()\n    # get the answers\n    answers = df['Answer'].tolist()",
+        "detail": "EvaluateLLM",
+        "documentation": {}
+    },
+    {
+        "label": "evaluateModelOnAllTests",
+        "kind": 2,
+        "importPath": "EvaluateLLM",
+        "description": "EvaluateLLM",
+        "peekOfCode": "def evaluateModelOnAllTests(model: str, api_key: str, num_attempts: int = 1, csv_path: str = \"LLMResults.csv\"):\n    # csv is in the format \"Model, ComplexCalculationsScore, MultiStepScore, RandomStringIdentificationScore, RandomStringGenerationScore\"\n    # Run complex calculations\n    complex_calculations_score = evaluateModelOnCsv(model, api_key, \"ComplexCalculations.csv\", num_attempts)\n    # Run multi-step\n    multi_step_score = evaluateModelOnCsv(model, api_key, \"MultiStep.csv\", num_attempts)\n    # Run random string identification\n    random_string_identification_score = evaluateModelOnCsv(model, api_key, \"random_number_questions.csv\", num_attempts)\n    # Run random string generation\n    random_string_generation_score_avg = 0",
+        "detail": "EvaluateLLM",
+        "documentation": {}
+    },
+    {
+        "label": "evaluateAllModels",
+        "kind": 2,
+        "importPath": "EvaluateLLM",
+        "description": "EvaluateLLM",
+        "peekOfCode": "def evaluateAllModels(api_key: str, num_attempts: int = 1, csv_path: str = \"LLMResults.csv\"):\n    # open list of models \"models.txt\"\n    with open(\"models.txt\", \"r\") as file:\n        models = file.readlines()\n    # remove the newline characters\n    models = [model.strip() for model in models]\n    for model in models:\n        if model[0] != \"#\":\n            evaluateModelOnAllTests(model, api_key, num_attempts, csv_path)\nif __name__ == \"__main__\":",
+        "detail": "EvaluateLLM",
+        "documentation": {}
+    },
+    {
+        "label": "RandomnessAnalyzer",
+        "kind": 6,
+        "importPath": "RandomDetermine",
+        "description": "RandomDetermine",
+        "peekOfCode": "class RandomnessAnalyzer:\n    def __init__(self, sequence):\n        # Clean the sequence to ensure we only have digits\n        self.sequence = ''.join(filter(str.isdigit, sequence))\n        self.digits = [int(d) for d in self.sequence]\n    def frequency_analysis(self):\n        \"\"\"Test for uniform distribution of digits\"\"\"\n        counts = Counter(self.digits)\n        expected_freq = len(self.digits) / 10  # Expected frequency for truly random\n        chi_square, p_value = stats.chisquare(",
+        "detail": "RandomDetermine",
+        "documentation": {}
+    },
+    {
+        "label": "generate_sequential",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_sequential(length):\n    \"\"\"Pattern 1: Sequential numbers\"\"\"\n    start = random.randint(0, 900000)\n    return str(start).zfill(length)\ndef generate_repeating(length):\n    \"\"\"Pattern 2: Repeating single digit\"\"\"\n    base = str(random.randint(0, 9))\n    return (base * length)[:length]\ndef generate_alternating(length):\n    \"\"\"Pattern 3: Alternating two digits\"\"\"",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_repeating",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_repeating(length):\n    \"\"\"Pattern 2: Repeating single digit\"\"\"\n    base = str(random.randint(0, 9))\n    return (base * length)[:length]\ndef generate_alternating(length):\n    \"\"\"Pattern 3: Alternating two digits\"\"\"\n    pattern = str(random.randint(0, 1)) + str(random.randint(0, 1))\n    return (pattern * (length//2 + 1))[:length]\ndef generate_fibonacci_like(length):\n    \"\"\"Pattern 4: Fibonacci-like sequence\"\"\"",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_alternating",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_alternating(length):\n    \"\"\"Pattern 3: Alternating two digits\"\"\"\n    pattern = str(random.randint(0, 1)) + str(random.randint(0, 1))\n    return (pattern * (length//2 + 1))[:length]\ndef generate_fibonacci_like(length):\n    \"\"\"Pattern 4: Fibonacci-like sequence\"\"\"\n    a, b = random.randint(0, 9), random.randint(0, 9)\n    result = str(a) + str(b)\n    while len(result) < length:\n        next_digit = (int(result[-1]) + int(result[-2])) % 10",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_fibonacci_like",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_fibonacci_like(length):\n    \"\"\"Pattern 4: Fibonacci-like sequence\"\"\"\n    a, b = random.randint(0, 9), random.randint(0, 9)\n    result = str(a) + str(b)\n    while len(result) < length:\n        next_digit = (int(result[-1]) + int(result[-2])) % 10\n        result += str(next_digit)\n    return result[:length]\ndef generate_ascending(length):\n    \"\"\"Pattern 5: Ascending digits\"\"\"",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_ascending",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_ascending(length):\n    \"\"\"Pattern 5: Ascending digits\"\"\"\n    start = random.randint(0, 5)\n    result = ''\n    for i in range(length):\n        result += str((start + i) % 10)\n    return result\ndef generate_descending(length):\n    \"\"\"Pattern 6: Descending digits\"\"\"\n    start = random.randint(4, 9)",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_descending",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_descending(length):\n    \"\"\"Pattern 6: Descending digits\"\"\"\n    start = random.randint(4, 9)\n    result = ''\n    for i in range(length):\n        result += str((start - i) % 10)\n    return result\ndef generate_palindrome(length):\n    \"\"\"Pattern 7: Palindrome pattern\"\"\"\n    half_length = length // 2",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_palindrome",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_palindrome(length):\n    \"\"\"Pattern 7: Palindrome pattern\"\"\"\n    half_length = length // 2\n    first_half = ''.join(str(random.randint(0, 9)) for _ in range(half_length))\n    if length % 2 == 0:\n        return first_half + first_half[::-1]\n    else:\n        middle = str(random.randint(0, 9))\n        return first_half + middle + first_half[::-1]\ndef generate_multiplicative(length):",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_multiplicative",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_multiplicative(length):\n    \"\"\"Pattern 8: Multiplicative sequence\"\"\"\n    base = random.randint(1, 3)\n    result = ''\n    current = 1\n    while len(result) < length:\n        result += str(current % 10)\n        current *= base\n    return result[:length]\ndef generate_squared(length):",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_squared",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_squared(length):\n    \"\"\"Pattern 9: Squared numbers sequence\"\"\"\n    result = ''\n    i = random.randint(0, 3)\n    while len(result) < length:\n        result += str((i * i) % 10)\n        i += 1\n    return result[:length]\ndef generate_geometric(length):\n    \"\"\"Pattern 10: Geometric sequence\"\"\"",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_geometric",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_geometric(length):\n    \"\"\"Pattern 10: Geometric sequence\"\"\"\n    start = random.randint(1, 5)\n    ratio = random.randint(2, 3)\n    result = ''\n    current = start\n    while len(result) < length:\n        result += str(current % 10)\n        current *= ratio\n    return result[:length]",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_true_random",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_true_random(length, binary=False):\n    \"\"\"Generate a truly random number using secrets module\"\"\"\n    if binary:\n        return ''.join(str(secrets.randbelow(2)) for _ in range(length))\n    else:\n        return ''.join(str(secrets.randbelow(10)) for _ in range(length))\ndef get_random_pattern(length, binary=False):\n    \"\"\"Get a random pattern generator\"\"\"\n    if binary:\n        # Subset of patterns that work well with binary",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_pattern",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def get_random_pattern(length, binary=False):\n    \"\"\"Get a random pattern generator\"\"\"\n    if binary:\n        # Subset of patterns that work well with binary\n        patterns = [\n            generate_alternating,\n            generate_repeating,\n            lambda l: generate_palindrome(l)[:l],\n            lambda l: generate_sequential(l)[:l]\n        ]",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_question_data",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_question_data(binary=False):\n    \"\"\"Generate a question data for CSV\"\"\"\n    length = random.randint(6, 9)\n    # Generate true random option\n    true_random = generate_true_random(length, binary)\n    # Generate three random pattern options\n    used_patterns = set()\n    options = []\n    # Add three pattern-based options\n    while len(options) < 3:",
+        "detail": "RandomGen",
+        "documentation": {}
+    },
+    {
+        "label": "generate_csv",
+        "kind": 2,
+        "importPath": "RandomGen",
+        "description": "RandomGen",
+        "peekOfCode": "def generate_csv(filename, num_questions=5):\n    fieldnames = ['Question', 'A', 'B', 'C', 'D', 'Answer']\n    questions = []\n    for _ in range(num_questions):\n        binary = random.choice([True, False])\n        questions.append(generate_question_data(binary))\n    with open(filename, 'w', newline='') as csvfile:\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(questions)",
+        "detail": "RandomGen",
+        "documentation": {}
+    }
+]

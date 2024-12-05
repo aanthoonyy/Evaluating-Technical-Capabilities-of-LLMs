@@ -1,0 +1,16 @@
+# openai/gpt-3.5-turbo
+# openai/gpt-4o-mini
+# anthropic/claude-3-haiku
+# anthropic/claude-3.5-sonnet
+# google/gemini-flash-1.5
+# google/gemma-2-27b-it
+meta-llama/llama-3.1-70b-instruct
+meta-llama/llama-3.1-8b-instruct
+meta-llama/llama-3-70b-instruct
+nousresearch/hermes-3-llama-3.1-405b
+mistralai/mistral-nemo
+microsoft/wizardlm-2-8x22b
+mistralai/mistral-tiny
+x-ai/grok-beta
+cohere/command-r
+qwen/qwen-2.5-72b-instruct

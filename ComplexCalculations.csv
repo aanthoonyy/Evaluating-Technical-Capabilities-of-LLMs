@@ -1,0 +1,26 @@
+﻿Question,A,B,C,D,Answer
+Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5,0,1,"0,1","0,4",D
+"Find the product of the given polynomials in the given polynomial ring. f(x) = 4x - 5, g(x) = 2x^2 - 4x + 2 in Z_8[x].",2x^2 + 5,6x^2 + 4x + 6,0,x^2 + 1,B
+"Find the order of the factor group (Z_11 x Z_15)/(<1, 1>)",1,2,5,11,A
+Determine whether the polynomial in Z[x] satisfies an Eisenstein criterion for irreducibility over Q. x^2 - 12,"Yes, with p=2.","Yes, with p=3.","Yes, with p=5.",No.,B
+Which of the following statements is true?,Every equivalence relation is a partial-ordering relation.,"Number of relations form A = {x, y, z} to B= (1, 2), is 64.",Empty relation _ is reflexive,Properties of a relation being symmetric and being un-symmetric are negative of each other.,B
+How many positive integers are factors of 120 and also factors of 40?,4,8,2,1,B
+What is the shortest distance from the origin to the circle defined by $x^2-24x +y^2+10y +160=0$?,10,16,24,12,A
+"How many ways are there to choose 3 cards from a standard deck of 52 cards, if all three cards must be of different suits? (Assume that the order of the cards does not matter.)",8788,2,2197,21,A
+"To place the first paving stone in a path, Alex starts at the crate of stones, walks three feet, places the stone, and returns to the crate. For each subsequent stone, Alex walks two feet farther each way. Alex will place the first 50 stones in a path. After returning to the crate from placing the $50^\text{th}$ stone, what is the total distance Alex walked, in feet?",100,90950,5200,50,C
+What is the smallest prime whose digits sum to $19$?,5,11,17,199,D
+What is the second number in the row of Pascal's triangle that has 43 numbers?,43,16,42,44,C
+"The least common multiple of two integers is 240, and the greatest common divisor is 24. Given that one of the integers is 48, what is the other integer?",1,120,20,12,B
+"If 3^(x â€“ 3) + 10 = 19, then x =",3,4,5,6,C
+"How many palindromes (arrangements reading the same forward as backward) of 2 letters or more, containing the letter M, can be formed by rearranging any subset of the letters MISSISSIPPI?",89,66,86,2012,A
+An equilateral triangle has sides of 12 inches. What is the approximate area of the triangle?,62,72,84,112,A
+"The base of a solid is the region bounded by x^2 = 4y and the line y = 2, and each plane section perpendicular to the y-axis is a square. The volume of the solid is",8,16,20,32,D
+"What is the slope of the line that passes through the points (5, 4) and (â€“2, 3)?",0.14,0.2,0.33,5,A
+"Suppose 5 different integers are randomly chosen from between 20 and 69, inclusive. What is the probability that they each have a different tens digit?",\frac{1}{4},\frac{1}{3},\frac{1000}{52969},\frac{2500}{52969},D
+How many three-digit positive integers are there?,899,900,1000,999,B
+How many diagonals are in a regular octagon?,8,16,17,20,D
+"Planets X, Y and Z take 360, 450 and 540 days, respectively, to rotate around the same sun. If the three planets are lined up in a ray having the sun as its endpoint, what is the minimum positive number of days before they are all in the exact same locations again?",360,5400,900,1200,B
+"At noon, an experimenter has 50 grams of a radioactive isotope. At noon 9 days later only 45 grams remain. To the nearest day, how many days after the experiment started will there be only 20 grams?",54,59,60,78,D
+"Six positive integers are written on the faces of a cube. Each vertex is labeled with the product of the three numbers on the faces adjacent to the vertex. If the sum of the numbers on the vertices is equal to $1001$, then what is the sum of the numbers written on the faces?",18,13,1001,31,D
+Six 6-sided dice are rolled. What is the probability that three of the dice show prime numbers and the rest show composite numbers?,\frac{125}{2916},\frac{5}{16},\frac{5}{54},\frac{5}{55},C
+"A bag has 4 red and 6 blue marbles. A marble is selected and not replaced, then a second is selected. What is the probability that both are the same color?",\frac{1}{8},\frac{8}{15},\frac{1}{15},\frac{7}{15},D
